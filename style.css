@@ -128,9 +128,9 @@ main #introduction a{
     font-weight: bold;
 }
 main > #photo > img{
-    border-radius: 20px;
+    border-radius: 50%;
     transition: ease-in-out 0.3s;
-    width: 80%;
+    rotate: 30deg;
 }
 main > #photo > img:hover{
     transform: scale(1.05);
