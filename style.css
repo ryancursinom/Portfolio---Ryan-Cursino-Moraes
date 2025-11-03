@@ -128,14 +128,13 @@ main #introduction a{
     font-weight: bold;
 }
 main > #photo > img{
-    border-radius: 50%;
+    border-radius: 20px;
     transition: ease-in-out 0.3s;
-    rotate: 20deg;
+    width: 80%;
 }
 main > #photo > img:hover{
     transform: scale(1.05);
 }
-
 #about-me{
     display: flex;
     justify-content: space-around;
