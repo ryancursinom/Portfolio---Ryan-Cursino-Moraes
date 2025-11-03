@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Meu Primeiro Portifólio - 2025</title>
 </head>
 <body>
@@ -17,25 +18,25 @@
             <img width="80rem" src="IMGS/Ryan%20Cursino%20Moraes%201°J.png" alt="A logotype with a basketbal ball, a green circle around them and two symbols, plus(+) and minus(-)">
         </div>
         <ul>
-            <li><a href="#">Sobre mim</a></li>
-            <li><a href="#">Sonhos</a></li>
-            <li><a href="#">Tech</a></li>
-            <li><a href="#">Projeto</a></li>
+            <li><a href="#about-me">Sobre mim</a></li>
+            <li><a href="#curiosities">Curiosidades</a></li>
+            <li><a href="#lists">Sonhos</a></li>
+            <li><a href="#projects">Projetos</a></li>
         </ul>
     </header>
     <main>
         <div id="introduction">
-            <h1><span style="color: orange;">Olá!</span> Sou o Ryan Cursino Moraes</h1>
+            <h1><span style="color: orange;">Seja Bem-Vindo!</span><br> Sou o Ryan Cursino Moraes</h1>
             <h6 style="margin-top: 0;">Sic Parvis Magna</h6>
             <ul class="box-social-medias">
                 <li class="instagram">
-                    <a href="#"><i class="fab fa-instagram icon"></i></a>
+                    <a href="https://www.instagram.com/ryancursinom/" target="_blank"><i class="fab fa-instagram icon"></i></a>
                 </li>
                 <li class="facebook">
                     <a href="#"><i class="fab fa-facebook icon"></i></a>
                 </li>
                 <li class="github">
-                    <a href="#"><i class="fab fa-github icon"></i></a>
+                    <a href="https://github.com/ryancursinom" target="_blank"><i class="fab fa-github icon"></i></a>
                 </li>
             </ul>
         </div>
@@ -106,7 +107,7 @@
                         <li><i class="devicon-html5-plain colored"></i></li>
                         <li><i class="devicon-css3-plain colored"></i></li>
                     </ul>
-                    <a href="https://ryancursinom.github.io/TakeRyan-CardapioDeFilmes/">Limk do projeto</a>
+                    <a href="https://ryancursinom.github.io/TakeRyan-CardapioDeFilmes/" target="_blank">Link do projeto</a>
                 </div>
                 <div class="project">
                     <iframe src="https://ryancursinom.github.io/Site-de-Dia-das-Maes/" frameborder="0" scrolling="no"></iframe>
@@ -117,7 +118,7 @@
                         <li><i class="devicon-css3-plain colored"></i></li>
                         <li><i class="devicon-javascript-plain colored"></i></li>
                     </ul>
-                    <a href="https://ryancursinom.github.io/Site-de-Dia-das-Maes/">Link do projeto</a>
+                    <a href="https://ryancursinom.github.io/Site-de-Dia-das-Maes/" target="_blank">Link do projeto</a>
                 </div>
                 <div class="project">
                     <iframe src="https://ryancursinom.github.io/Calculadora-Basica/" frameborder="0" scrolling="no"></iframe>
@@ -128,7 +129,7 @@
                         <li><i class="devicon-css3-plain colored"></i></li>
                         <li><i class="devicon-javascript-plain colored"></i></li>
                     </ul>
-                    <a href="https://ryancursinom.github.io/Calculadora-Basica/">Link do projeto</a>
+                    <a href="https://ryancursinom.github.io/Calculadora-Basica/" target="_blank">Link do projeto</a>
                 </div>
             </div>
         </div>
@@ -144,7 +145,7 @@
                         <li><i class="devicon-css3-plain colored"></i></li>
                         <li><i class="devicon-javascript-plain colored"></i></li>
                     </ul>
-                    <a href="https://github.com/ryancursinom/iara-landing.git">Link do projeto</a>
+                    <a href="https://github.com/ryancursinom/iara-landing.git" target="_blank">Link do projeto</a>
                 </div>
                 <div class="project">
                     <img src="IMGS/Captura de tela 2025-10-26 134759.png" alt="">
@@ -154,7 +155,7 @@
                         <li><i class="devicon-html5-plain colored"></i></li>
                         <li><i class="devicon-css3-plain colored"></i></li>
                     </ul>
-                    <a href="https://ryancursinom.github.io/ProjetoFinal-ProgramacaoWeb/">Link do projeto</a>
+                    <a href="https://ryancursinom.github.io/ProjetoFinal-ProgramacaoWeb/" target="_blank">Link do projeto</a>
                 </div>
 
             </div>
@@ -162,7 +163,9 @@
     </article>
     <footer>
         <p>&copy; Todos os direitos reservados &reg;</p>
-        <a href="mailto:ryan.moraes@germinare.org.br">Entre em contato</a>
+        <a href="mailto:ryan.moraes@germinare.org.br" onclick="entrarEmContato(event)">Entre em contato</a>
     </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
