@@ -6,9 +6,10 @@
     <meta name="keywords" content="HTML, CSS, Portfólio, Developer, Back-End, Front-End, Fullstack, Basketball, Python, Java, Train, Learn, Build, Brazil">
     <meta name="description" content="There is my first portfolio, bulded at 26/08/2025, so right now I'm 15 years old!">
     <meta name="author" content="Ryan Cursino Moraes">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Meu Primeiro Portifólio - 2025</title>
 </head>
@@ -17,12 +18,19 @@
         <div id="logo">
             <img width="80rem" src="IMGS/Ryan%20Cursino%20Moraes%201°J.png" alt="A logotype with a basketbal ball, a green circle around them and two symbols, plus(+) and minus(-)">
         </div>
-        <ul>
+
+        <ul id="normal-link">
             <li><a href="#about-me">Sobre mim</a></li>
             <li><a href="#curiosities">Curiosidades</a></li>
             <li><a href="#lists">Sonhos</a></li>
             <li><a href="#projects">Projetos</a></li>
         </ul>
+
+        <div id="hamburguer-link">
+            <i class="fa-solid fa-bars"  style="color: white; font-size: 2rem;"></i>
+        </div>
+
+        <ul ></ul>
     </header>
     <main>
         <div id="introduction">
@@ -44,7 +52,7 @@
             <img width="340rem" src="IMGS/FotoEmpresarial.jpg" alt="There is a Ryan picture. He's wearing a black smocking, because at this photo he was in a 15's birthday">
     </main>
     <article id="about-me">
-        <img width="400rem" src="IMGS/IMG_0801.JPEG" alt="There is a picture of my computer when I'm was programming">
+        <img width="460rem" src="IMGS/IMG_0801.JPEG" alt="There is a picture of my computer when I'm was programming">
         <div id="text">
             <h3>SOBRE MIM</h3>
             <p>Eu sou o Ryan, tenho 15 anos e estou no meu primeiro ano do ensino médio técnico em ADS na Germinare TECH do Instituto J&F.</p>
@@ -97,7 +105,6 @@
     </section>
     <article id="projects">
         <h3>MEUS PROJETOS</h3>
-        <div class="intro-flex">
             <div class="projects-flex">
                 <div class="project">
                     <iframe src="https://ryancursinom.github.io/TakeRyan-CardapioDeFilmes/" frameborder="0" scrolling="no"></iframe>
@@ -121,7 +128,7 @@
                     <a href="https://ryancursinom.github.io/Site-de-Dia-das-Maes/" target="_blank">Link do projeto</a>
                 </div>
                 <div class="project">
-                    <iframe src="https://ryancursinom.github.io/Calculadora-Basica/" frameborder="0" scrolling="no"></iframe>
+                    <img src="IMGS/Captura de tela 2025-11-04 083920.png"></iframe>
                     <p>Calculadora Básica</p>
                     <p>27/07/2025</p>
                     <ul>
@@ -131,10 +138,6 @@
                     </ul>
                     <a href="https://ryancursinom.github.io/Calculadora-Basica/" target="_blank">Link do projeto</a>
                 </div>
-            </div>
-        </div>
-        <div class="intro-flex">
-            <div class="projects-flex">
                 <div class="project">
                     <img src="IMGS/Captura de tela 2025-10-26 132740.png"></img>
                     <p>CRUD do IARA ( em dupla com o <a href="https://github.com/lucasdonini" style="color: skyblue;" target="_blank">Lucas Kluska</a>)</p>
@@ -157,8 +160,6 @@
                     </ul>
                     <a href="https://ryancursinom.github.io/ProjetoFinal-ProgramacaoWeb/" target="_blank">Link do projeto</a>
                 </div>
-
-            </div>
         </div>
     </article>
     <footer>

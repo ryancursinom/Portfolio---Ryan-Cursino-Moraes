@@ -21,13 +21,13 @@ header > #logo{
     margin-left: 5%;
     align-self: center;
 }
-header > ul{
+header > ul#normal-link{
     flex:70%;
     display: flex;
     justify-content: space-around;
     align-self: center;
 }
-header > ul > li{
+header > ul#normal-link > li{
     list-style: none;
     width: 10rem;
     padding: 1rem;
@@ -35,14 +35,17 @@ header > ul > li{
     text-align: center;
     transition: ease-in-out 0.5s;
 }
-header > ul > li > a{
+header > ul#normal-link > li > a{
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
 }
-header > ul > li:hover a{
+header > ul#normal-link > li:hover a{
     text-decoration: underline;
     transform: scale(1.2);;
+}
+header > #hamburguer-link {
+    display: none;
 }
 main{
     display: flex;
@@ -142,7 +145,7 @@ main > #photo > img:hover{
 }
 #about-me > img{
     border-radius: 50px;
-    height: 25rem;
+    height: 30rem;
     align-self: center;
 }
 #about-me #text{
@@ -164,14 +167,14 @@ article#curiosities > h2{
 .flex-container{
     display: flex;
     justify-content: space-around;
-    gap: 2rem;
+    gap: 0.1rem;
 }
 .flex-container > div{
     background-color: white;
     width: 24%;
     height: 100vh;
     padding: 1rem;
-    margin: 2rem;
+    margin: 5rem;
     z-index: 0;
     position: relative;
     border-radius: 20px;
@@ -181,7 +184,8 @@ article#curiosities > h2{
     text-align: center;
     margin-top: 10%;
 }
-.flex-container > #basketball::after{
+
+.flex-container > div::after{
     content: '';
     position: absolute;
     top: 100;
@@ -189,38 +193,16 @@ article#curiosities > h2{
     left: 0;
     width: 100%;
     height: 50%;
-    background-image: url(IMGS/1000035633.JPEG);
-    background-size: cover;
-    border-radius: 20px;
-    z-index: 1;
-}
-.flex-container > #dog::after{
-    content: '';
-    position: absolute;
-    top: 100;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-image: url(IMGS/IMG_1347.JPEG);
     background-size: cover;
     background-position:center;
     border-radius: 20px;
     z-index: 1;
 }
-.flex-container > #me-young::after{
-    content: '';
-    position: absolute;
-    top: 100;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-image: url(IMGS/1000025390.JPEG);
-    background-size: cover;
-    border-radius: 20px;
-    z-index: 1;
-}
+
+.flex-container > #dog::after {background-image: url(IMGS/IMG_1347.JPEG);}
+.flex-container > #basketball::after {background-image: url(IMGS/1000035633.JPEG);}
+.flex-container > #me-young::after {background-image: url(IMGS/1000025390.JPEG);}
+
 #lists{
     display: flex;
     justify-content: space-around;
@@ -275,11 +257,21 @@ article#curiosities > h2{
     place-items: center;
 }
 .projects-flex {
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
-    margin-top: 5rem;
+    display: grid;
+    grid-template-areas: 
+        "take mae"
+        "calc iara"
+        "agencia agencia"
+    ;
+    grid-gap: 10rem;
 }
+
+.project:nth-child(1) {grid-area: take;}
+.project:nth-child(2) {grid-area: mae;}
+.project:nth-child(3) {grid-area: calc;}
+.project:nth-child(4) {grid-area: iara;}
+.project:nth-child(5) {grid-area: agencia;}
+
 .project {
     display: flex;
     flex-direction: column;
@@ -287,12 +279,12 @@ article#curiosities > h2{
     margin: 0 auto;
 }
 .project > iframe {
-    width: 22rem;
-    height: 10rem;
+    width: 30rem;
+    height: 12rem;
 }
 .project > img {
-    width: 22rem;
-    height: 10rem;
+    width: 30rem;
+    height: 12rem;
     object-fit: cover;
 }
 .project > p {
