@@ -55,12 +55,3 @@
         flex-direction: column;
     }
 }
-
-@media (max-width: 600px) {
-    #normal-link {
-        display: none !important;
-    }
-    #hambuerguer-link {
-        display: block;
-    }
-}

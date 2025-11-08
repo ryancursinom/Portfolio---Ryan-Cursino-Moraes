@@ -44,9 +44,6 @@ header > ul#normal-link > li:hover a{
     text-decoration: underline;
     transform: scale(1.2);;
 }
-header > #hamburguer-link {
-    display: none;
-}
 main{
     display: flex;
     justify-content: space-around;
