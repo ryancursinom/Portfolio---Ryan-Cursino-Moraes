@@ -158,11 +158,12 @@ article#curiosities > h2{
     background-color: #ffffff;
     color: #323232;
     text-align: center;
-    width: 40%;
+    width:80%;
+    max-width: 500px;
     font-size: 2rem;
     border-radius: 10px;
     padding: 2rem;
-    place-self: center;
+    margin: 0 auto;
 }
 .flex-container{
     display: flex;
