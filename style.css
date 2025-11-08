@@ -199,9 +199,9 @@ article#curiosities > h2{
     z-index: 1;
 }
 
-.flex-container > #dog::after {background-image: url(IMGS/IMG_1347.JPEG);}
-.flex-container > #basketball::after {background-image: url(IMGS/1000035633.JPEG);}
-.flex-container > #me-young::after {background-image: url(IMGS/1000025390.JPEG);}
+.flex-container > #dog::after {background-image: url(IMGS/dog.JPEG);}
+.flex-container > #basketball::after {background-image: url(IMGS/basketball.JPEG);}
+.flex-container > #me-young::after {background-image: url(IMGS/babyRyan.JPEG);}
 
 #lists{
     display: flex;
