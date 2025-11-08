@@ -1,0 +1,66 @@
+@media (max-width: 1307px) {
+    #about-me{
+        gap: 5rem;
+    }
+    
+    article#curiosities > h2{
+        width: 50%;
+    }
+
+    .flex-container {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .flex-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "basketball dog"
+            "me-young me-young"
+        ;
+    }
+
+    #basketball{grid-area: basketball;}
+    #me-young{grid-area: me-young;}
+    #dog{grid-area: dog}
+
+    .flex-container > div#basketball,
+    .flex-container > div#dog {
+        width: auto;
+        height: 60vh;
+    }
+    .flex-container > div#me-young {
+        width: auto;
+        height: 40vh;
+    }
+
+    .flex-container > #me-young > p {
+        margin-top: 5%;
+    }
+
+    .flex-container > #me-young::after {
+        height: 55%;
+    }
+
+    #dreams > #dreams-list > ul > li, #travels > #places-list > ol > li {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 1159px) {
+    .projects-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    #normal-link {
+        display: none !important;
+    }
+    #hambuerguer-link {
+        display: block;
+    }
+}
